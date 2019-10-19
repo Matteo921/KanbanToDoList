@@ -69,17 +69,24 @@ body .create-column:before {
 }
 
 body .column-container {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: stretch;
+      align-items: stretch;
 }
 
 body .column {
   position: relative;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
   height: 55vh;
   margin: 50px 10px;
   border: 1px solid #8d8888;
@@ -154,5 +161,4 @@ body .card .btn-delete {
   color: #fff;
   background-color: #000;
 }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.prefixed.css.map */
